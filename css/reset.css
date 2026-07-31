@@ -1,1 +1,6 @@
-*{margin:0;padding:0;box-sizing:border-box}
+*,*::before,*::after{box-sizing:border-box}
+html{min-height:100%;background:#090b0f}
+body,h1,p{margin:0}
+button{font:inherit;border:0}
+body{min-height:100vh;overflow-x:hidden}
+canvas{display:block}

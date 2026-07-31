@@ -1,0 +1,10 @@
+@keyframes rotateGlow{to{transform:rotate(360deg)}}
+@keyframes fogA{from{transform:translate3d(-4%,0,0) scale(1)}to{transform:translate3d(8%,-3%,0) scale(1.08)}}
+@keyframes fogB{from{transform:translate3d(8%,0,0) scale(1.05)}to{transform:translate3d(-8%,2%,0) scale(.98)}}
+@keyframes moonPulse{0%,100%{opacity:.51;transform:scale(1)}50%{opacity:.61;transform:scale(1.015)}}
+@keyframes panelReveal{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes resultFlash{0%{box-shadow:0 0 0 rgba(168,50,61,0)}45%{box-shadow:0 0 30px rgba(168,50,61,.24)}100%{box-shadow:0 0 0 rgba(168,50,61,0)}}
+.hero-panel{animation:panelReveal .9s ease both}.moon{animation:moonPulse 8s ease-in-out infinite}
+.fog-a{animation:fogA 19s ease-in-out infinite alternate}.fog-b{animation:fogB 24s ease-in-out infinite alternate}.fog-c{animation:fogA 31s ease-in-out infinite alternate-reverse}
+.result-panel.is-revealed{animation:resultFlash .85s ease}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:1ms!important;animation-iteration-count:1!important}}

@@ -1,1 +1,26 @@
-{"name":"Hunters Feast","short_name":"Feast","start_url":"./","display":"standalone","theme_color":"#0B0C10","background_color":"#0B0C10","icons":[]}
+{
+  "name": "Hunter's Feast｜獵人的盛宴",
+  "short_name": "獵人盛宴",
+  "description": "原創哥德獵人風格三階段食物抽選工具",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#090b0f",
+  "theme_color": "#090b0f",
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
