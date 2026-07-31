@@ -27,13 +27,13 @@
 <header class="topbar">
   <div>
     <span class="brand-mini">HUNTER'S FEAST</span>
-    <strong>獵人的盛宴</strong>
+    <strong>隨機的盛宴</strong>
   </div>
   <button id="installButton" class="small-button" hidden>安裝 App</button>
 </header>
 
 <nav class="tabbar" aria-label="主要功能">
-  <button class="tab active" data-view="hunt">狩獵</button>
+  <button class="tab active" data-view="hunt">尋找</button>
   <button class="tab" data-view="collection">收藏</button>
   <button class="tab" data-view="stats">統計</button>
   <button class="tab" data-view="settings">設定</button>
@@ -46,15 +46,15 @@
     <div class="sigil" aria-hidden="true"><span></span><span></span><span></span></div>
     <p class="eyebrow">THE NIGHT CHOOSES</p>
     <h1>Hunter's Feast</h1>
-    <p class="subtitle">獵人的盛宴</p>
+    <p class="subtitle">隨機的盛宴</p>
     <div class="divider"></div>
-    <p class="quote">「今晚，讓狩獵決定你的晚餐。」</p>
+    <p class="quote">「今晚，讓輪盤決定你的晚餐。」</p>
 
     <section class="filters-panel">
       <div class="panel-title-row">
         <div>
           <p class="panel-kicker">HUNT CONDITIONS</p>
-          <h2>狩獵條件</h2>
+          <h2>條件</h2>
         </div>
         <button id="resetFiltersButton" class="text-button">重設</button>
       </div>
@@ -83,7 +83,7 @@
       <div id="wheel" class="wheel">
         <svg id="wheelSvg" viewBox="0 0 320 320" aria-label="食物轉盤"></svg>
         <div class="wheel-center">
-          <span id="wheelStageLabel">準備狩獵</span>
+          <span id="wheelStageLabel">準備</span>
           <strong id="wheelCurrentValue">等待開始</strong>
         </div>
       </div>
@@ -99,9 +99,8 @@
     <button id="huntButton" class="hunt-button" type="button">
       <span class="button-glow"></span>
       <span class="button-label">BEGIN HUNT</span>
-      <span class="button-zh">開始三階段狩獵</span>
+       <span class="button-zh">開始三階段輪盤</span>
     </button>
-
     <section id="resultPanel" class="result-panel" aria-live="polite">
       <p class="result-kicker">TONIGHT'S HUNT</p>
       <div class="result-grid">
