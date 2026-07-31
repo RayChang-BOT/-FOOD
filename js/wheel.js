@@ -1,11 +1,7 @@
-window.HuntersFeastWheel=(()=>{
-const wheel=document.getElementById("wheel");const label=document.getElementById("wheelStageLabel");const value=document.getElementById("wheelCurrentValue");let rotation=0;
-const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
-async function spin(options,stageLabel,finalValue,duration=1500){
-wheel.classList.add("is-spinning");label.textContent=stageLabel;
-const ticker=setInterval(()=>{value.textContent=options[Math.floor(Math.random()*options.length)]},75);
-rotation+=720+Math.floor(Math.random()*540);wheel.style.transform=`rotate(${rotation}deg)`;
-await wait(duration);clearInterval(ticker);value.textContent=finalValue;wheel.classList.remove("is-spinning");
-if("vibrate"in navigator)navigator.vibrate([22,28,45]);await wait(280)}
-return{spin}
+window.HFWheel=(()=>{const wheel=document.getElementById("wheel"),svg=document.getElementById("wheelSvg"),label=document.getElementById("wheelStageLabel"),value=document.getElementById("wheelCurrentValue");let rotation=0;
+const ns="http://www.w3.org/2000/svg";const wait=ms=>new Promise(r=>setTimeout(r,ms));
+function point(cx,cy,r,a){const rad=(a-90)*Math.PI/180;return[cx+r*Math.cos(rad),cy+r*Math.sin(rad)]}
+function render(items){svg.innerHTML="";const n=items.length,s=360/n,cx=160,cy=160,r=156;items.forEach((item,i)=>{const a0=i*s,a1=(i+1)*s,[x0,y0]=point(cx,cy,r,a0),[x1,y1]=point(cx,cy,r,a1);const p=document.createElementNS(ns,"path");p.setAttribute("d",`M ${cx} ${cy} L ${x0} ${y0} A ${r} ${r} 0 ${s>180?1:0} 1 ${x1} ${y1} Z`);p.setAttribute("fill",i%2?"#161a22":"#4a2026");p.setAttribute("stroke","rgba(179,138,85,.45)");svg.appendChild(p);const mid=a0+s/2,[tx,ty]=point(cx,cy,112,mid);const t=document.createElementNS(ns,"text");t.setAttribute("x",tx);t.setAttribute("y",ty);t.setAttribute("fill","#e8dfcf");t.setAttribute("font-size",n>10?"10":"12");t.setAttribute("text-anchor","middle");t.setAttribute("dominant-baseline","middle");t.setAttribute("transform",`rotate(${mid} ${tx} ${ty})`);t.textContent=item.length>8?item.slice(0,8)+"…":item;svg.appendChild(t)})}
+async function spin(items,stage,finalValue,duration){render(items);wheel.classList.add("is-spinning");label.textContent=stage;const timer=setInterval(()=>{value.textContent=items[Math.floor(Math.random()*items.length)];window.HFSound.tick()},85);rotation+=720+Math.floor(Math.random()*540);wheel.style.transform=`rotate(${rotation}deg)`;await wait(duration);clearInterval(timer);value.textContent=finalValue;wheel.classList.remove("is-spinning");window.HFSound.stop();if("vibrate"in navigator)navigator.vibrate([24,30,45]);await wait(250)}
+return{spin,render}
 })();
