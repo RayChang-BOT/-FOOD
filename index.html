@@ -37,6 +37,7 @@
   <button class="tab" data-view="collection">收藏</button>
   <button class="tab" data-view="stats">統計</button>
   <button class="tab" data-view="settings">設定</button>
+  <button class="tab" data-view="database">資料庫</button>
 </nav>
 
 <main class="app-shell">
@@ -182,9 +183,73 @@
     <p class="install-note">iPhone：Safari → 分享 → 加入主畫面。</p>
   </section>
 </section>
+
+<section id="view-database" class="view">
+  <section class="page-panel">
+    <p class="eyebrow">THE HUNTER'S CODEX</p>
+    <h2 class="page-title">菜譜資料庫編輯器</h2>
+    <p class="muted-note">可直接新增、修改或刪除料理。自訂資料會保存在目前裝置的瀏覽器中。</p>
+
+    <section class="editor-panel">
+      <div class="panel-title-row">
+        <div>
+          <p class="panel-kicker">EDIT DISH</p>
+          <h3 id="editorTitle">新增料理</h3>
+        </div>
+        <button id="cancelEditButton" class="text-button" type="button" hidden>取消編輯</button>
+      </div>
+
+      <div class="editor-grid">
+        <label>地區
+          <input id="editorRegion" list="regionOptions" placeholder="例如：台灣">
+        </label>
+        <label>菜系
+          <input id="editorCuisine" list="cuisineOptions" placeholder="例如：夜市小吃">
+        </label>
+        <label class="editor-wide">料理名稱
+          <input id="editorDish" placeholder="例如：鹽酥雞">
+        </label>
+        <label>價位
+          <select id="editorPrice">
+            <option>平價</option><option>中等</option><option>中高</option><option>高價</option>
+          </select>
+        </label>
+        <label>標籤
+          <input id="editorTags" placeholder="晚餐, 宵夜, 炸物">
+        </label>
+        <label class="check-row"><input id="editorSpicy" type="checkbox"><span>辣味</span></label>
+        <label class="check-row"><input id="editorSoup" type="checkbox"><span>湯類</span></label>
+        <label class="check-row"><input id="editorVegetarian" type="checkbox"><span>素食</span></label>
+      </div>
+
+      <datalist id="regionOptions"></datalist>
+      <datalist id="cuisineOptions"></datalist>
+
+      <button id="saveDishButton" class="hunt-button editor-save" type="button">
+        <span class="button-label">SAVE DISH</span>
+        <span class="button-zh">儲存料理</span>
+      </button>
+    </section>
+
+    <section class="database-list-panel">
+      <div class="panel-title-row">
+        <div>
+          <p class="panel-kicker">DISH ARCHIVE</p>
+          <h3>料理清單</h3>
+        </div>
+        <button id="resetDatabaseButton" class="text-button" type="button">恢復預設資料</button>
+      </div>
+
+      <input id="databaseSearch" class="search-input" placeholder="搜尋地區、菜系或料理">
+      <p id="databaseCount" class="muted-note">共 0 道料理</p>
+      <div id="databaseList" class="database-list"></div>
+    </section>
+  </section>
+</section>
+
 </main>
 
-<aside class="version-badge">Hunter's Feast · v1.0.0 · Round 8</aside>
+<aside class="version-badge">Hunter's Feast · v1.1.0 · Round 9</aside>
 
 <script src="./js/storage.js" defer></script>
 <script src="./js/sound.js" defer></script>
@@ -192,6 +257,7 @@
 <script src="./js/wheel.js" defer></script>
 <script src="./js/maps.js" defer></script>
 <script src="./js/ui.js" defer></script>
+<script src="./js/database.js" defer></script>
 <script src="./js/app.js" defer></script>
 </body>
 </html>

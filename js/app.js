@@ -24,5 +24,21 @@ $("clearFavoritesButton").onclick=()=>{st.clearFavorites();renderAll()};$("clear
 function loadSettings(){const s=st.settings();$("soundToggle").checked=s.sound;$("vibrationToggle").checked=s.vibration;$("avoidRepeatToggle").checked=s.avoidRepeat;$("speedSetting").value=s.speed}
 ["soundToggle","vibrationToggle","avoidRepeatToggle","speedSetting"].forEach(id=>$(id).onchange=()=>st.setSettings({sound:$("soundToggle").checked,vibration:$("vibrationToggle").checked,avoidRepeat:$("avoidRepeatToggle").checked,speed:$("speedSetting").value}));
 $("resetAppButton").onclick=()=>{if(confirm("確定要清除所有收藏、黑名單、紀錄與設定？")){st.reset();location.reload()}};
+
+document.addEventListener("hf-database-updated",event=>{
+  data=event.detail;
+  w.render(Object.keys(data));
+  renderAll();
+});
+$("resetDatabaseButton").onclick=async()=>{
+  if(!confirm("確定要刪除所有自訂變更並恢復預設料理資料？"))return;
+  st.clearCustomData();
+  const r=await fetch("./data/foods.json",{cache:"no-store"});
+  data=await r.json();
+  window.HFDatabase.init(data);
+  w.render(Object.keys(data));
+  renderAll();
+};
+
 addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;$("installButton").hidden=false});$("installButton").onclick=async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null};
-(async()=>{loadSettings();try{const r=await fetch("./data/foods.json");if(!r.ok)throw new Error("資料載入失敗");data=await r.json();w.render(Object.keys(data));renderAll()}catch(e){console.error(e);ui.setText("dishResult","資料載入失敗")}if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(console.error))})()})();
+(async()=>{loadSettings();try{const r=await fetch("./data/foods.json");if(!r.ok)throw new Error("資料載入失敗");const defaultData=await r.json();data=st.customData()||defaultData;w.render(Object.keys(data));window.HFDatabase.init(data);renderAll()}catch(e){console.error(e);ui.setText("dishResult","資料載入失敗")}if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(console.error))})()})();

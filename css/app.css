@@ -50,3 +50,39 @@ h1{margin-top:10px;font-size:clamp(2.2rem,11vw,4.8rem);font-weight:500;line-heig
 .action-grid,.result-actions{grid-template-columns:repeat(3,1fr)}.result-actions{grid-template-columns:repeat(2,1fr)}
 .collection-grid{grid-template-columns:1fr 1fr}.stats-grid{grid-template-columns:repeat(4,1fr)}
 }
+
+.tabbar{grid-template-columns:repeat(5,1fr)}
+.editor-panel,.database-list-panel{
+  margin-top:22px;padding:17px;border:1px solid rgba(179,138,85,.22);
+  background:rgba(2,3,5,.36);text-align:left
+}
+.editor-grid{display:grid;gap:12px;margin-top:16px}
+.editor-grid label{display:grid;gap:7px;color:#bdb4a6;font-size:.78rem}
+.editor-grid input,.editor-grid select{
+  min-height:42px;padding:8px 10px;background:#0d1117;color:var(--text);
+  border:1px solid rgba(179,138,85,.28)
+}
+.editor-save{display:block;margin-left:auto;margin-right:auto}
+.database-list{display:grid;gap:10px;margin-top:14px}
+.database-card{
+  display:grid;gap:10px;padding:14px;border:1px solid rgba(179,138,85,.18);
+  background:rgba(10,13,18,.72)
+}
+.database-card-main{display:grid;gap:4px}
+.database-card-main strong{color:var(--gold-bright);font-weight:500}
+.database-card-main span{color:#948e86;font-size:.72rem}
+.database-tags{display:flex;gap:6px;flex-wrap:wrap}
+.database-tags span{
+  padding:4px 7px;border:1px solid rgba(179,138,85,.2);color:#a8a095;font-size:.65rem
+}
+.database-actions{display:flex;gap:8px;flex-wrap:wrap}
+.database-actions button{
+  min-height:36px;padding:7px 10px;background:#11151b;color:#c9bca9;
+  border:1px solid rgba(179,138,85,.25)
+}
+.database-actions .delete{color:#cf9ca1;border-color:rgba(168,50,61,.35)}
+@media(min-width:680px){
+  .editor-grid{grid-template-columns:repeat(2,1fr)}
+  .editor-wide{grid-column:1/-1}
+  .database-card{grid-template-columns:1fr auto;align-items:center}
+}

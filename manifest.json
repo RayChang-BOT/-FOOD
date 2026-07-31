@@ -1,7 +1,7 @@
 {
   "name": "Hunter's Feast｜獵人的盛宴",
   "short_name": "獵人盛宴",
-  "description": "原創哥德獵人風格三階段食物轉盤與附近餐廳搜尋",
+  "description": "原創哥德獵人風格食物轉盤，支援在頁面上編輯料理資料庫",
   "lang": "zh-Hant",
   "start_url": "./",
   "scope": "./",

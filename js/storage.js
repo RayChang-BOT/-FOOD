@@ -1,5 +1,5 @@
 window.HFStorage=(()=>{
-const K={history:"hf8-history",favorites:"hf8-favorites",blocked:"hf8-blocked",settings:"hf8-settings"};
+const K={history:"hf8-history",favorites:"hf8-favorites",blocked:"hf8-blocked",settings:"hf8-settings",customData:"hf9-custom-data"};
 const read=(k,d)=>{try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch{return d}};
 const write=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
 const defaults={sound:true,vibration:true,avoidRepeat:true,speed:"normal"};
@@ -14,6 +14,9 @@ blocked:()=>read(K.blocked,[]),
 block:e=>{let v=read(K.blocked,[]);if(!v.some(x=>x.dish===e.dish))v.unshift(e);write(K.blocked,v);return v},
 unblock:dish=>{const v=read(K.blocked,[]).filter(x=>x.dish!==dish);write(K.blocked,v);return v},
 clearBlocked:()=>localStorage.removeItem(K.blocked),
+customData:()=>read(K.customData,null),
+setCustomData:v=>write(K.customData,v),
+clearCustomData:()=>localStorage.removeItem(K.customData),
 settings:()=>({...defaults,...read(K.settings,{})}),
 setSettings:v=>write(K.settings,{...defaults,...v}),
 reset:()=>Object.values(K).forEach(k=>localStorage.removeItem(k))
