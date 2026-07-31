@@ -1,133 +1,880 @@
 {
   "台灣": {
     "夜市小吃": [
-      "鹽酥雞",
-      "蚵仔煎",
-      "大腸包小腸",
-      "臭豆腐",
-      "胡椒餅",
-      "雞排"
+      {
+        "name": "鹽酥雞",
+        "tags": [
+          "晚餐",
+          "宵夜",
+          "炸物"
+        ],
+        "price": "平價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "蚵仔煎",
+        "tags": [
+          "晚餐",
+          "小吃"
+        ],
+        "price": "平價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "大腸包小腸",
+        "tags": [
+          "晚餐",
+          "宵夜",
+          "小吃"
+        ],
+        "price": "平價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "臭豆腐",
+        "tags": [
+          "晚餐",
+          "宵夜",
+          "炸物"
+        ],
+        "price": "平價",
+        "spicy": true,
+        "soup": false,
+        "vegetarian": true
+      },
+      {
+        "name": "胡椒餅",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "小吃"
+        ],
+        "price": "平價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "雞排",
+        "tags": [
+          "晚餐",
+          "宵夜",
+          "炸物"
+        ],
+        "price": "平價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      }
     ],
     "家常料理": [
-      "滷肉飯",
-      "三杯雞",
-      "控肉飯",
-      "菜脯蛋",
-      "客家小炒"
+      {
+        "name": "滷肉飯",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "平價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "三杯雞",
+        "tags": [
+          "晚餐",
+          "聚餐"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "控肉飯",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "平價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "客家小炒",
+        "tags": [
+          "晚餐",
+          "聚餐"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      }
     ],
     "鍋物": [
-      "麻辣火鍋",
-      "石頭火鍋",
-      "薑母鴨",
-      "羊肉爐"
+      {
+        "name": "麻辣火鍋",
+        "tags": [
+          "晚餐",
+          "宵夜",
+          "聚餐",
+          "鍋物"
+        ],
+        "price": "中高",
+        "spicy": true,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "石頭火鍋",
+        "tags": [
+          "晚餐",
+          "聚餐",
+          "鍋物"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "薑母鴨",
+        "tags": [
+          "晚餐",
+          "宵夜",
+          "鍋物"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "羊肉爐",
+        "tags": [
+          "晚餐",
+          "鍋物"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      }
     ]
   },
   "日本": {
     "拉麵": [
-      "豚骨拉麵",
-      "味噌拉麵",
-      "醬油拉麵",
-      "雞白湯拉麵",
-      "沾麵"
+      {
+        "name": "豚骨拉麵",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "味噌拉麵",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "醬油拉麵",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "雞白湯拉麵",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "辛辣拉麵",
+        "tags": [
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": true,
+        "soup": true,
+        "vegetarian": false
+      }
     ],
     "丼飯": [
-      "牛丼",
-      "親子丼",
-      "天丼",
-      "海鮮丼"
+      {
+        "name": "牛丼",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "平價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "親子丼",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "天丼",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "炸物",
+          "飯類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "海鮮丼",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "海鮮"
+        ],
+        "price": "中高",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      }
     ],
-    "定食": [
-      "唐揚雞定食",
-      "鹽烤鯖魚定食",
-      "薑燒豬肉定食"
+    "鍋物": [
+      {
+        "name": "壽喜燒",
+        "tags": [
+          "晚餐",
+          "聚餐",
+          "鍋物"
+        ],
+        "price": "中高",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "日式涮涮鍋",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "鍋物"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      }
     ]
   },
   "韓國": {
     "烤肉": [
-      "韓式豬五花",
-      "韓式牛小排",
-      "辣醬雞肉"
+      {
+        "name": "韓式豬五花",
+        "tags": [
+          "晚餐",
+          "聚餐",
+          "烤肉"
+        ],
+        "price": "中高",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "韓式牛小排",
+        "tags": [
+          "晚餐",
+          "聚餐",
+          "烤肉"
+        ],
+        "price": "高價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "辣醬雞肉",
+        "tags": [
+          "晚餐",
+          "聚餐"
+        ],
+        "price": "中等",
+        "spicy": true,
+        "soup": false,
+        "vegetarian": false
+      }
     ],
     "鍋物": [
-      "部隊鍋",
-      "泡菜鍋",
-      "嫩豆腐鍋"
+      {
+        "name": "部隊鍋",
+        "tags": [
+          "晚餐",
+          "宵夜",
+          "聚餐",
+          "鍋物"
+        ],
+        "price": "中等",
+        "spicy": true,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "泡菜鍋",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "鍋物"
+        ],
+        "price": "中等",
+        "spicy": true,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "嫩豆腐鍋",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "鍋物"
+        ],
+        "price": "中等",
+        "spicy": true,
+        "soup": true,
+        "vegetarian": false
+      }
     ],
     "炸雞": [
-      "洋釀炸雞",
-      "蒜香炸雞",
-      "蜂蜜奶油炸雞"
+      {
+        "name": "洋釀炸雞",
+        "tags": [
+          "晚餐",
+          "宵夜",
+          "炸物"
+        ],
+        "price": "中等",
+        "spicy": true,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "蒜香炸雞",
+        "tags": [
+          "晚餐",
+          "宵夜",
+          "炸物"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "蜂蜜奶油炸雞",
+        "tags": [
+          "晚餐",
+          "宵夜",
+          "炸物"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      }
     ]
   },
   "中國": {
     "川菜": [
-      "麻婆豆腐",
-      "水煮牛肉",
-      "辣子雞",
-      "酸菜魚"
+      {
+        "name": "麻婆豆腐",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "中等",
+        "spicy": true,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "水煮牛肉",
+        "tags": [
+          "晚餐",
+          "聚餐"
+        ],
+        "price": "中高",
+        "spicy": true,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "辣子雞",
+        "tags": [
+          "晚餐",
+          "聚餐"
+        ],
+        "price": "中高",
+        "spicy": true,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "酸菜魚",
+        "tags": [
+          "晚餐",
+          "聚餐",
+          "海鮮"
+        ],
+        "price": "中高",
+        "spicy": true,
+        "soup": true,
+        "vegetarian": false
+      }
     ],
     "粵菜": [
-      "燒鴨飯",
-      "乾炒牛河",
-      "煲仔飯",
-      "叉燒飯"
-    ],
-    "麵食": [
-      "炸醬麵",
-      "牛肉麵",
-      "刀削麵",
-      "酸辣粉"
+      {
+        "name": "燒鴨飯",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "乾炒牛河",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "煲仔飯",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      }
     ]
   },
   "泰國": {
     "咖哩": [
-      "綠咖哩雞",
-      "紅咖哩牛",
-      "瑪莎曼咖哩"
+      {
+        "name": "綠咖哩雞",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "中等",
+        "spicy": true,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "紅咖哩牛",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "中等",
+        "spicy": true,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "瑪莎曼咖哩",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      }
     ],
     "街頭料理": [
-      "泰式炒河粉",
-      "打拋豬飯",
-      "海南雞飯"
-    ],
-    "湯品": [
-      "冬蔭功",
-      "椰奶雞湯"
+      {
+        "name": "泰式炒河粉",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "打拋豬飯",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "平價",
+        "spicy": true,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "海南雞飯",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "平價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      }
     ]
   },
   "義大利": {
     "義大利麵": [
-      "蒜香辣椒麵",
-      "番茄肉醬麵",
-      "白醬培根麵",
-      "青醬雞肉麵"
+      {
+        "name": "蒜香辣椒義大利麵",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": true,
+        "soup": false,
+        "vegetarian": true
+      },
+      {
+        "name": "番茄肉醬義大利麵",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "白醬培根義大利麵",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "青醬雞肉義大利麵",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      }
     ],
     "披薩": [
-      "瑪格麗特披薩",
-      "海鮮披薩",
-      "四起司披薩"
-    ],
-    "燉飯": [
-      "松露野菇燉飯",
-      "海鮮燉飯",
-      "南瓜燉飯"
+      {
+        "name": "瑪格麗特披薩",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "聚餐"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": true
+      },
+      {
+        "name": "海鮮披薩",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "聚餐",
+          "海鮮"
+        ],
+        "price": "中高",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "四起司披薩",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "聚餐"
+        ],
+        "price": "中高",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": true
+      }
     ]
   },
   "美國": {
     "漢堡": [
-      "培根牛肉堡",
-      "雙層起司堡",
-      "辣味雞腿堡"
+      {
+        "name": "培根牛肉堡",
+        "tags": [
+          "午餐",
+          "晚餐"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "雙層起司堡",
+        "tags": [
+          "午餐",
+          "晚餐"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "辣味雞腿堡",
+        "tags": [
+          "午餐",
+          "晚餐"
+        ],
+        "price": "中等",
+        "spicy": true,
+        "soup": false,
+        "vegetarian": false
+      }
     ],
     "燒烤": [
-      "美式豬肋排",
-      "手撕豬三明治",
-      "烤牛胸肉"
+      {
+        "name": "美式豬肋排",
+        "tags": [
+          "晚餐",
+          "聚餐",
+          "烤肉"
+        ],
+        "price": "中高",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "手撕豬三明治",
+        "tags": [
+          "午餐",
+          "晚餐"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "烤牛胸肉",
+        "tags": [
+          "晚餐",
+          "聚餐",
+          "烤肉"
+        ],
+        "price": "中高",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      }
+    ]
+  },
+  "印度": {
+    "咖哩": [
+      {
+        "name": "奶油雞咖哩",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "羊肉咖哩",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "中高",
+        "spicy": true,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "菠菜起司咖哩",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "飯類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": true
+      }
     ],
-    "早午餐": [
-      "班尼迪克蛋",
-      "美式鬆餅",
-      "炸雞鬆餅"
+    "烤物": [
+      {
+        "name": "坦都里烤雞",
+        "tags": [
+          "晚餐",
+          "聚餐",
+          "烤肉"
+        ],
+        "price": "中高",
+        "spicy": true,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "印度烤餅拼盤",
+        "tags": [
+          "午餐",
+          "晚餐"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": true
+      }
+    ]
+  },
+  "越南": {
+    "河粉": [
+      {
+        "name": "越南牛肉河粉",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      },
+      {
+        "name": "越南雞肉河粉",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "麵類"
+        ],
+        "price": "中等",
+        "spicy": false,
+        "soup": true,
+        "vegetarian": false
+      }
+    ],
+    "小吃": [
+      {
+        "name": "越南春捲",
+        "tags": [
+          "午餐",
+          "晚餐",
+          "小吃"
+        ],
+        "price": "平價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      },
+      {
+        "name": "越南法國麵包",
+        "tags": [
+          "早餐",
+          "午餐"
+        ],
+        "price": "平價",
+        "spicy": false,
+        "soup": false,
+        "vegetarian": false
+      }
     ]
   }
 }
