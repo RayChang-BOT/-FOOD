@@ -72,6 +72,31 @@
     <p id="resultQuote" class="result-quote">May good food guide your night.</p>
   </section>
 
+
+  <section id="restaurantPanel" class="restaurant-panel">
+    <div class="restaurant-heading">
+      <div>
+        <p class="panel-kicker">NEARBY HUNT</p>
+        <h2>搜尋附近餐廳</h2>
+      </div>
+      <span id="locationStatus" class="location-status">尚未取得位置</span>
+    </div>
+
+    <p class="restaurant-copy">
+      依照本次抽中的料理，在 Google Maps 搜尋你附近的餐廳。
+    </p>
+
+    <div class="restaurant-actions">
+      <button id="locateButton" type="button">◎ 取得目前位置</button>
+      <button id="nearbyButton" type="button" disabled>⌖ 搜尋附近餐廳</button>
+      <button id="mapsButton" type="button" disabled>↗ 在 Google Maps 開啟</button>
+    </div>
+
+    <p id="restaurantHint" class="restaurant-hint">
+      完成一次狩獵後即可搜尋。
+    </p>
+  </section>
+
   <section class="controls-panel">
     <label class="switch-row">
       <span>介面音效</span>
@@ -96,13 +121,14 @@
 </section>
 </main>
 
-<aside class="version-badge">Hunter's Feast · v0.4.0 · Round 4</aside>
+<aside class="version-badge">Hunter's Feast · v0.7.0 · Round 7</aside>
 
 <script src="./js/particles.js" defer></script>
 <script src="./js/storage.js" defer></script>
 <script src="./js/sound.js" defer></script>
 <script src="./js/ui.js" defer></script>
 <script src="./js/wheel.js" defer></script>
+<script src="./js/maps.js" defer></script>
 <script src="./js/app.js" defer></script>
 </body>
 </html>
