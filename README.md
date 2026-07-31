@@ -1,26 +1,25 @@
-# Hunter's Feast — Round 2
+# Hunter's Feast — Round 3
 
-第二回新增：
+第三回新增：
 
-- 原創哥德獵人風首頁
-- 動態月亮、霧氣與漂浮粒子
-- iPhone 安全區與手機版排版
-- 192×192 與 512×512 PWA 圖示
-- 離線 Service Worker
-- 三階段抽選顯示
-- 初步料理資料庫
-- Android PWA 安裝按鈕與 iPhone 安裝提示
+- 真正的三階段轉盤流程
+- 地區 → 菜系 → 料理依序旋轉
+- 加速／減速視覺效果
+- 手機震動回饋
+- 階段進度顯示
+- 最近 6 次抽選紀錄
+- LocalStorage 本機儲存
+- 清除紀錄功能
+- 畫面版本號 v0.3.0
+- Service Worker 快取更新為 Round 3
 
-## 覆蓋第一回
+## 覆蓋第二回
 
-1. 解壓縮此 ZIP。
-2. 打開 `HuntersFeast-Round2` 資料夾。
-3. 將裡面的所有檔案與資料夾，上傳到 GitHub Repository 最外層。
-4. GitHub 詢問同名檔案時，直接覆蓋。
-5. 等待 GitHub Pages 重新部署。
+1. 解壓縮 `HuntersFeast-Round3.zip`
+2. 打開解壓後的資料夾
+3. 將裡面所有檔案與資料夾上傳到 GitHub Repository 最外層
+4. 覆蓋所有同名檔案
+5. 等待 GitHub Actions 顯示綠色勾勾
+6. 網站左下角應顯示 `v0.3.0 · Round 3`
 
-Repository 首頁應直接看到 `index.html`，不能再包一層資料夾。
-
-## iPhone 安裝
-
-使用 Safari 開啟 GitHub Pages 網址，點「分享」→「加入主畫面」→「加入」。
+若仍看到舊版，請清除該網站的 Safari/Chrome 網站資料，或在網址後加上 `?v=3`。
